@@ -13,4 +13,8 @@ export const LogoImageWrapper = styled.div`
     display: flex;
     overflow: hidden;
     padding-left: 100px;
+
+    @media (max-width: 800px){
+        padding-left: 0px;
+    }
 `;
