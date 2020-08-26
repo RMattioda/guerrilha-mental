@@ -15,8 +15,8 @@ export const LogoImageWrapper = styled.div`
     height: 100%;
     width: 140px;
     display: flex;
-    overflow: hidden;
     padding-left: 100px;
+    margin-right: 15px;
 
     align-items: center;
     justify-content: center;
