@@ -62,30 +62,23 @@ export const MenuItem = styled.button`
 
     text-decoration: none;
     outline:none;
-
-    &:hover,
-    &:focus{
+    
+    &:hover{
         color: var(--primary);
-        transform: scale(1, 1);
     }
 
     &:hover:after{
-        color: var(--primary);
-        transform: scale(1, 1);
+        width: 100%;
+        transition: width .3s;
     }
 
     &:after {
         content: '';
-        position: fixed;
-        bottom: 0;
-        height: 0.175rem;
-        left: 0;
-        width: 100%;
+        display: block;
+        width: 0;
+        height: 3px;
         background: var(--primary);
-
-        transform: scale(0, 1);
-        transform-origin: 0% 100%;
-        transition: transform 0.3s ease; 
+        transition: width .3s;
     }
     
     @media (max-width: 800px){

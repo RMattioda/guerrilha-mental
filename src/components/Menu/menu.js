@@ -31,16 +31,21 @@ function Menu () {
       <Logo className={value.current} />
   
       <MenuItemWrapper>
+      
         <Link to="/">
+        <div>
           <MenuItem>
             Podcasts
           </MenuItem>
+          </div>
         </Link>
   
         <Link to="/">
+        <div>
           <MenuItem>
             Sobre
           </MenuItem>
+        </div>
         </Link>
       </MenuItemWrapper>
     </MenuWrapper>
