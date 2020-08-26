@@ -1,18 +1,27 @@
 import styled from 'styled-components';
 
-export const MenuWrapper = styled.nav`
+export const MenuWrapper = styled.nav.attrs(props => ({
+    className: props.className.value,
+}))`
     width: 100%;
     height: 130px;
-    z-index: 100;
+    z-index: 1;
     top: 0;
     left: 0;
     right: 0;
 
-    background: var(--grayDark);
+    background-color: var(--grayDark);
     border-bottom: 2px solid var(--primary);
 
     display: flex;
     flex-direction: row;
+    position: fixed;
+
+    transition: 0.4s;
+
+    &.bottom{
+        height: 100px;
+    }
 
     @media (max-width: 800px){
         display: flex;
@@ -61,12 +70,13 @@ export const MenuItem = styled.button`
     }
 
     &:hover:after{
+        color: var(--primary);
         transform: scale(1, 1);
     }
 
     &:after {
         content: '';
-        position: absolute;
+        position: fixed;
         bottom: 0;
         height: 0.175rem;
         left: 0;

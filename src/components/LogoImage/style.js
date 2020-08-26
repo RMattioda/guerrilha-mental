@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const LogoImage = styled.img`
+export const LogoImage = styled.img.attrs(props => ({
+    className: props.className.value,
+}))`
     width: 130px;    
     max-height: 120px;
     max-width: 250px;
@@ -8,6 +10,12 @@ export const LogoImage = styled.img`
     display: block;
     margin-left: auto;
     margin-right: auto;
+
+    transition: 0.4s;
+
+    &.bottom{
+        width: 90px;
+    }
     
 `;
 
