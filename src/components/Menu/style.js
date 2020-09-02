@@ -24,6 +24,7 @@ export const MenuWrapper = styled.nav.attrs(props => ({
     }
 
     @media (max-width: 800px){
+        height: 100px;
         display: flex;
         justify-content: center;
         align-items: center;

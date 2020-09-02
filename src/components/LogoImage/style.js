@@ -16,6 +16,10 @@ export const LogoImage = styled.img.attrs(props => ({
     &.bottom{
         width: 90px;
     }
+
+    @media (max-width: 800px){
+        width: 90px;
+    }
     
 `;
 
