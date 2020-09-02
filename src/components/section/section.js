@@ -17,6 +17,10 @@ const SectionWrapper = styled.section`
         width: 70%;
     `};
 
+    ${({ full }) => full && css`
+        width: 100%;
+    `};
+
     @media (max-width: 800px){
         width: 100%;
         margin: 0px;
@@ -25,13 +29,15 @@ const SectionWrapper = styled.section`
 
 `;
 
-const Section = ({ children, principal }) => {
+const Section = ({ children, principal, great}) => {
 
     const princial = Boolean(principal);
+    const full = Boolean(great);
 
     return (
         <SectionWrapper
             princial={princial}
+            full={full}
         >
             { children }
         </SectionWrapper>

@@ -6,15 +6,9 @@ import styled from 'styled-components';
 const Main = styled.main`
     flex: 1;
     padding-top: 30px;
-    padding-left: 5%;
-    padding-right: 5%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-
-    @media (max-width: 800px){
-      flex-direction: column;
-    }
+    padding-left: 2%;
+    padding-right: 2%;
+   
 `;
 
 const PageDefault = ({ children }) => (

@@ -11,6 +11,12 @@ const TitleContent = styled.h1`
 
     transition: .6s;
 
+    @media (max-width: 800px){
+        margin: 0px;
+        margin-bottom: 10px;
+        font-size: 1.6rem;
+    }
+
     &:hover,
     &:focus{
         color: var(--black);
