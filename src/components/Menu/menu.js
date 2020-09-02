@@ -21,7 +21,6 @@ function Menu () {
         document.getElementById('nav-menu').classList.remove('bottom');
         document.getElementById('image').classList.remove('bottom');
       }
-      console.log(scrolled + ' ' + value.current)
     });
   });
 
@@ -32,20 +31,20 @@ function Menu () {
   
       <MenuItemWrapper>
       
-        <Link to="/">
-        <div>
-          <MenuItem>
-            Podcasts
-          </MenuItem>
+        <Link to="/podcast">
+          <div>
+            <MenuItem>
+              Podcasts
+            </MenuItem>
           </div>
         </Link>
   
-        <Link to="/">
-        <div>
-          <MenuItem>
-            Sobre
-          </MenuItem>
-        </div>
+        <Link to="/sobre">
+          <div>
+            <MenuItem>
+              Sobre
+            </MenuItem>
+          </div>
         </Link>
       </MenuItemWrapper>
     </MenuWrapper>
